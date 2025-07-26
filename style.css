@@ -1,0 +1,95 @@
+html {
+  background: hsl(146, 20%, 78%); 
+  background: -webkit-linear-gradient(
+    to right,
+    #292e49,
+    #536976,
+    #bbd2c5
+  ); 
+  background: linear-gradient(
+    to right,
+    #292e49,
+    #536976,
+    #bbd2c5
+  );
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.appContainer {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease;
+}
+
+.appContainer:hover {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+  scale: 1.01;
+}
+
+#outputDisplay {
+  width: 340px;
+  height: 70px;
+  font-size: 35px;
+  text-align: right;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;       /* curve ’em */
+  border: 0px solid black;
+  padding: 0 16px;           /* give your numbers some breathing room */
+  box-sizing: border-box;    /* so padding doesn’t blow out the width */
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+button {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  font-size: 35px;
+  background-color: #465862;
+  color: white;
+  border: 0px solid black;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+  scale: 1.07;
+}
+
+button:active {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  scale: 1;
+}
